@@ -1,2 +1,5 @@
 <!--index.wxml-->
-<view class="news">新闻~!</view>
+<view class='news-wrapper'>
+    <view class="newsen">news</view>
+    <view class="newscn">观天下</view>
+</view>

@@ -1,7 +1,17 @@
-.news {
-  margin-top: 300rpx;
+.newsen {
   text-align: center;
   font-size: 200rpx;
   line-height: 280rpx;
   opacity: 0.8;
+}
+.newscn {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  opacity: 0.65;
+}
+.news-wrapper{
+  background-color: moccasin;
+  padding-top: 174rpx;
+  padding-bottom: 250rpx;
 }
