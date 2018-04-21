@@ -1,7 +1,9 @@
 Page({
   data: {
-    news_id: "id",
-    news_title: "我是新闻标题"
+    list_id: "",
+    list_title: "",
+    list_date:"",
+    list_image:""
   },
   onLoad() {    
 
@@ -19,9 +21,16 @@ Page({
         let news_list_id = result[0].id
         let news_list_title = result[0].title
         console.log(news_list_date, news_list_id, news_list_image,news_list_title)
-      }
-    }),
 
+        this.setData({
+          list_id:news_list_id,
+          list_title:news_list_title,
+          list_date: news_list_date,
+          list_image: news_list_image,
+        })
+      }
+      })
+    
     //详情页
       wx.request({
         url: 'https://test-miniprogram.com/api/news/detail',

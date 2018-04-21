@@ -1,20 +1,19 @@
-.newsen {
-  text-align: center;
-  font-size: 200rpx;
-  line-height: 280rpx;
-  opacity: 0.8;
+.list_id {
+  text-align: left;
+  font-size: 30rpx;
 }
-.newscn {
-  text-align: center;
-  font-size: 40rpx;
-  line-height: 56rpx;
-  opacity: 0.65;
+.list_title {
+  font-size: 60rpx;
+
 }
-.news-wrapper{
-  padding-top: 174rpx;
-  padding-bottom: 250rpx;
-  position: relative;
+.list_date{
+  font-size: 30rpx;
 }
+.list_image{
+  font-size: 30rpx;
+}
+
+/*背景图片*/
 .news-bg {
   position: absolute;
   top: 0;
@@ -22,5 +21,5 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.35;
+  opacity: 0.15;
 }
