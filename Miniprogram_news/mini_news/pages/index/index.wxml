@@ -1,2 +1,8 @@
 <!--index.wxml-->
-<view class="news">新闻~!</view>
+<view class='news-wrapper'>
+    <view class="list_id">{{list_id}}</view>
+    <view class="list_title">{{list_title}}</view>
+    <view class="list_date">{{list_date}}</view>
+    <view class="list_image">{{list_image}}</view>
+    <image class="news-bg" src='/images/news-bg.png' mode="scaleToFill"></image>
+</view>
