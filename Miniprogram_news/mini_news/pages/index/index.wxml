@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class='news-wrapper'>
-    <view class="newsen">news</view>
-    <view class="newscn">观天下</view>
+    <view class="newsen">{{news_id}}</view>
+    <view class="newscn">{{news_title}}</view>
     <image class="news-bg" src='/images/news-bg.png' mode="scaleToFill"></image>
 </view>

@@ -1,7 +1,10 @@
 Page({
-  onLoad() {
-    console.log("hello world~!"),
-    
+  data: {
+    news_id: "id",
+    news_title: "我是新闻标题"
+  },
+  onLoad() {    
+
     //列表页
     wx.request({
       url: 'https://test-miniprogram.com/api/news/list',
