@@ -3,11 +3,12 @@ Page({
     list_id: "",
     list_title: "",
     list_date:"",
-    list_image:""
+    //list_image:"",
+    image_url: "",
   },
-  onLoad() {    
-
-    //列表页
+ 
+  onLoad (){  
+     //列表页
     wx.request({
       url: 'https://test-miniprogram.com/api/news/list',
       data: {
@@ -21,12 +22,22 @@ Page({
         let news_list_id = result[0].id
         let news_list_title = result[0].title
         console.log(news_list_date, news_list_id, news_list_image,news_list_title)
+      
+      //时间格式处理由 2018-04-07T02:01:24.000Z 变成 2018/4/7 上午10:01:24
+        var stringTime = news_list_date;
+        var newDate = new Date(stringTime);
+        var time = newDate.toLocaleString();
+        console.log(time); 
+      
+      //
+        
 
         this.setData({
-          list_id:news_list_id,
-          list_title:news_list_title,
-          list_date: news_list_date,
-          list_image: news_list_image,
+          list_id: news_list_id,
+          list_title: news_list_title,
+          list_date: time,
+          image_url: news_list_image,
+       
         })
       }
       })
