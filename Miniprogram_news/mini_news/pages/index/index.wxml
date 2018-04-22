@@ -4,5 +4,7 @@
     <view class="list_title">{{list_title}}</view>
     <view class="list_date">{{list_date}}</view>
     <view class="list_image">{{list_image}}</view>
+    <image class="news_image" src="{{image_url}}" mode="aspectFill"></image>
     <image class="news-bg" src='/images/news-bg.png' mode="scaleToFill"></image>
+    
 </view>
